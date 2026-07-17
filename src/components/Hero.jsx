@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -35,9 +36,10 @@ const Hero = () => {
               📞 Call Now
             </a>
 
-            <button className="px-8 py-4 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-black transition duration-300">
+           <Link to="/rooms"> <button className="px-8 py-4 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-black transition duration-300">
               Explore Rooms
             </button>
+            </Link>
           </div>
 
           {/* Stats */}

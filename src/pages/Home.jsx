@@ -4,6 +4,7 @@ import Map from '../components/Map'
 import  Form from '../components/Form'
 import RoomSample from '../components/RoomSample'
 import Hero from '../components/Hero'
+import Last from '../components/Last'
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
             <Hero/>
         </div>
         <RoomSample/>
+        <Last/>
         <Form/>
         <Map/>
 

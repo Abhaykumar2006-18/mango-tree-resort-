@@ -10,6 +10,7 @@ const Nav = () => {
     { name: "Rooms", path: "/rooms" },
     { name: "Events", path: "/events" },
     { name: "About Us", path: "/about" },
+    
   ];
 
   return (
@@ -28,15 +29,16 @@ const Nav = () => {
               </Link>
             ))}
 
-            <button className="px-6 py-2.5 rounded-full bg-black text-white font-medium hover:bg-gray-800 transition duration-300 shadow-lg hover:shadow-xl">
+            <Link to='/booking'><button className="px-6 py-2.5 rounded-full bg-black text-white font-medium hover:bg-gray-800 transition duration-300 shadow-lg hover:shadow-xl">
               Book Now
             </button>
+            </Link>
           </div>
 
           {/* Mobile Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-3xl text-white"
+            className="md:hidden text-3xl text-black"
           >
             {isOpen ? <HiX /> : <HiOutlineMenuAlt3 />}
           </button>
@@ -46,10 +48,10 @@ const Nav = () => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-500 ${
-          isOpen ? "max-h-96" : "max-h-0"
+          isOpen ? "max-h-96" : "max-h-0 "
         }`}
       >
-        <div className=" backdrop-blur-lg shadow-lg px-6 py-5 space-y-5">
+        <div className=" backdrop-blur-lg shadow-lg px-6 py-5 space-y-5 items-center">
 
           {navLinks.map((item) => (
             <Link
@@ -61,10 +63,13 @@ const Nav = () => {
               {item.name}
             </Link>
           ))}
+            
 
-          <button className="w-full py-3 rounded-full bg-black text-white font-semibold hover:bg-gray-800 transition">
-            Book Now
-          </button>
+          <Link to='/booking'><button className="px-6 py-2.5 rounded-full bg-black text-white font-medium hover:bg-gray-800 transition duration-300 shadow-lg hover:shadow-xl">
+              Book Now
+            </button>
+            </Link>
+        
         </div>
       </div>
     </nav>

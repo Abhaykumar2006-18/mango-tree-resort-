@@ -6,6 +6,7 @@ import Rooms from './pages/Rooms'
 import Events from './pages/Events'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import Form from './components/Form'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/rooms' element={<Rooms/>} />
           <Route path='/events' element={<Events/>} />
           <Route path='/about' element={<About/>} />
+          <Route path='/booking' element={<Form/>} />
        </Routes>
 
        <Footer/>
