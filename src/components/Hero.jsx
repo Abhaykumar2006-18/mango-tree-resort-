@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center">
       <div className="max-w-[1450px] mx-auto px-6 py-5 sm:px-10 lg:px-16 w-full">
-        <div className="font-Cinzel max-w-3xl  " style={{textShadow: "4px 4px 12px rgba(0,0,0,0.8)"}}>
+        <div className="font-Cinzel max-w-3xl py-6  " style={{textShadow: "4px 4px 12px rgba(0,0,0,0.8)"}}>
           {/* Tag */}
-          <span className="mt-12 inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm tracking-widest uppercase text-white mt-4" >
+          <span className="mt-12 inline-block px-4  rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm tracking-widest uppercase text-white " >
             Luxury Resort & Hotel
           </span>
 
@@ -29,14 +29,9 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <a
-              href="tel:+911234567890"
-              className="px-8 py-4 rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold transition duration-300 text-center"
-            >
-              📞 Call Now
-            </a>
+            <a href="tel:+911234567890" className="px-8 py-4 rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold transition duration-300 text-center" >  📞 Call Now </a>
 
-           <Link to="/rooms"> <button className="px-8 py-4 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-black transition duration-300">
+           <Link to="/rooms"> <button className="w-full px-8 py-4 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-black transition duration-300">
               Explore Rooms
             </button>
             </Link>
