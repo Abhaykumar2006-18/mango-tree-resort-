@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center">
-      <div className="max-w-[1450px] mx-auto px-6 sm:px-10 lg:px-16 w-full">
+      <div className="max-w-[1450px] mx-auto px-6 py-5 sm:px-10 lg:px-16 w-full">
         <div className="font-Cinzel max-w-3xl  " style={{textShadow: "4px 4px 12px rgba(0,0,0,0.8)"}}>
           {/* Tag */}
-          <span className="mt-12 inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm tracking-widest uppercase text-white" >
+          <span className="mt-12 inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm tracking-widest uppercase text-white mt-4" >
             Luxury Resort & Hotel
           </span>
 
