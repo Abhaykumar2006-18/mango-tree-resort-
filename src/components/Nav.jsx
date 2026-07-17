@@ -38,7 +38,7 @@ const Nav = () => {
           {/* Mobile Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-3xl text-black"
+            className="md:hidden text-3xl text-gray-600"
           >
             {isOpen ? <HiX /> : <HiOutlineMenuAlt3 />}
           </button>
