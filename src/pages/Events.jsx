@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
-
+import wedding from '../assets/wedding.mp4'
+import img2 from '../assets/img2.jpeg'
+import img4 from '../assets/img4.jpeg'
+import img5 from '../assets/img5.jpeg'
+import img6 from '../assets/img6.jpeg'
+import img7 from '../assets/img7.jpeg'
+import img8 from '../assets/img8.jpeg'
+import img9 from '../assets/img9.jpeg'
+import img10 from '../assets/img10.jpeg'
+import img11 from '../assets/img11.jpeg'
+import img12 from '../assets/img12.jpeg'
+import img13 from '../assets/img13.jpeg'
 // ============================================
 // DATA ARRAYS - Edit these to update content
 // ============================================
@@ -240,14 +251,14 @@ const whyChooseUsFeatures = [
 
 // Gallery items
 const galleryItems = [
-  { id: 1, title: 'Wedding Ceremony', category: 'Weddings' , url:'https://media.istockphoto.com/id/972734600/photo/colorful-stage-decoration-for-bride-and-groom-in-sangeet-night-of-indian-wedding.jpg?s=2048x2048&w=is&k=20&c=Zr-bKrr38pjceBam-l0nfhJGHzdua_ygU8H47g65zgk='},
-  { id: 2, title: 'Birthday Celebration', category: 'Parties', url:'https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmclMjBjZXJlbW9ueSUyMGluZGlhbnxlbnwwfDB8MHx8fDA%3D' },
-  { id: 3, title: 'Reception Setup', category: 'Reception' , url:'https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmclMjBjZXJlbW9ueSUyMGluZGlhbnxlbnwwfDB8MHx8fDA%3D' },
-  { id: 4, title: 'Green Lawn', category: 'Venue' , url:'https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmclMjBjZXJlbW9ueSUyMGluZGlhbnxlbnwwfDB8MHx8fDA%3D'},
-  { id: 5, title: 'Stage Design', category: 'Decoration' , url:'https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmclMjBjZXJlbW9ueSUyMGluZGlhbnxlbnwwfDB8MHx8fDA%3D' },
-  { id: 6, title: 'Floral Décor', category: 'Decoration' , url:'https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmclMjBjZXJlbW9ueSUyMGluZGlhbnxlbnwwfDB8MHx8fDA%3D' },
-  { id: 7, title: 'Dining Area', category: 'Catering' , url:'https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmclMjBjZXJlbW9ueSUyMGluZGlhbnxlbnwwfDB8MHx8fDA%3D'},
-  { id: 8, title: 'Celebration Moments', category: 'Events' , url:'https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmclMjBjZXJlbW9ueSUyMGluZGlhbnxlbnwwfDB8MHx8fDA%3D' }
+  { id: 1, title: 'Wedding Ceremony', category: 'Weddings' , url:`${img6}`},
+  { id: 2, title: 'Birthday Celebration', category: 'Parties', url:`${img7}` },
+  { id: 3, title: 'Reception Setup', category: 'Reception' , url:`${img8}` },
+  { id: 4, title: 'Green Lawn', category: 'Venue' , url:`${img9}`},
+  { id: 5, title: 'Stage Design', category: 'Decoration' , url:`${img10}`},
+  { id: 6, title: 'Floral Décor', category: 'Decoration' , url:`${img11}`},
+  { id: 7, title: 'Dining Area', category: 'Catering' , url:`${img12}`},
+  { id: 8, title: 'Celebration Moments', category: 'Events' ,url:`${img13}` }
 ];
 
 // Booking process steps
@@ -612,9 +623,9 @@ const Events = () => {
           <div className="relative">
             <div className="aspect-[4/3] bg-gradient-to-br from-[#2E7D32]/20 to-[#C9A227]/20 rounded-3xl overflow-hidden shadow-2xl">
               {/* Placeholder for venue image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center object-cover">
-                  <img src="https://media.istockphoto.com/id/2265758548/photo/asian-male-waiter-explaining-menu-to-asian-guests-at-outdoor-restaurant.jpg?s=2048x2048&w=is&k=20&c=OVf-TXDVxLBj-twdDi0VtRAPaOdyml4JDb0IKJIvxiM=" alt="" />
+              <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+                <div className="text-center overflow-hidden object-cover rounded-2xl">
+                  <img className=' w-full object-cover rounded-4xl' src="https://images.pexels.com/photos/38254685/pexels-photo-38254685.jpeg" alt="" />
                 </div>
               </div>
             </div>
@@ -622,6 +633,26 @@ const Events = () => {
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#C9A227]/10 rounded-full -z-10" />
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#2E7D32]/10 rounded-full -z-10" />
           </div>
+        </div>
+      </Section>
+
+      {/* ========== EVENT GALLERY SECTION ========== */}
+
+       <Section className="bg-white">
+        <SectionHeading 
+          title="Event Gallery"
+          subtitle="Glimpses of celebrations and cherished moments created at Mango Tree Resort."
+        />
+        
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          {galleryItems.map((item) => (
+            <GalleryItem 
+              key={item.id}
+              title={item.title}
+              category={item.category}
+              url={item.url}
+            />
+          ))}
         </div>
       </Section>
 
@@ -645,13 +676,13 @@ const Events = () => {
       </Section>
 
       {/* ========== GRAND WEDDING EXPERIENCE SECTION ========== */}
-      <Section className="bg-[#BDB5D5]">
+      <Section className="bg-white">
         <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* Image column */}
-          <div className="relative order-2 lg:order-1">
+          <div className="relative order-2 lg:order-1 shadow-2xl overflow-hidden">
             <div className=" aspect-[4/3] bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden">
               {/* Placeholder for wedding image */}
-                <img src="https://images.unsplash.com/photo-1568530873454-e4103a0b3c71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZyUyMGhhbGx8ZW58MHwwfDB8fHww" alt="" />
+                <img className='w-full object-cover h-full' src="https://images.unsplash.com/photo-1568530873454-e4103a0b3c71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZyUyMGhhbGx8ZW58MHwwfDB8fHww" alt="" />
             </div>
           </div>
           
@@ -660,10 +691,10 @@ const Events = () => {
             <span className="text-[#C9A227] font-semibold text-sm md:text-base tracking-wider uppercase">
               Your Dream Wedding
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mt-3 mb-6">
               Grand Wedding Experience
             </h2>
-            <p className="text-gray-200 text-lg leading-relaxed mb-8">
+            <p className="text-gray-700 text-lg leading-relaxed mb-8">
               Create the wedding of your dreams at Mango Tree Resort. Our expansive wedding lawn, 
               surrounded by lush greenery and mountain views, provides the perfect backdrop for your 
               special day.
@@ -682,7 +713,7 @@ const Events = () => {
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-4">
                   <span className="text-2xl">{item.icon}</span>
-                  <span className="text-white text-lg">{item.text}</span>
+                  <span className="text-black text-lg">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -733,48 +764,14 @@ const Events = () => {
             <div className="aspect-square bg-gradient-to-br from-[#C9A227]/20 to-[#2E7D32]/20 rounded-3xl overflow-hidden shadow-xl">
               {/* Placeholder for party image */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-8xl">🎉</span>
-                  <p className="text-gray-500 mt-4">Party Venue Image</p>
-                </div>
+                  <video className='h-full w-full object-cover rounded-4xl' autoPlay muted loop playsInline src={wedding}></video>
               </div>
             </div>
           </div>
         </div>
       </Section>
 
-      {/* ========== SPACIOUS CELEBRATION AREA SECTION ========== */}
-      <Section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-        <SectionHeading 
-          title="Spacious Celebration Area"
-          subtitle="Experience the freedom of large, open spaces designed to accommodate celebrations of every scale — from intimate gatherings to grand events with hundreds of guests."
-          light={true}
-        />
-        
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {celebrationFeatures.map((feature) => (
-            <article 
-              key={feature.id}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl md:rounded-3xl p-6 md:p-8 hover:bg-white/10 transition-all duration-300 group"
-            >
-              <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#C9A227] to-[#B8922A] rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                {feature.icon}
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-3">{feature.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{feature.description}</p>
-            </article>
-          ))}
-        </div>
-        
-        {/* Additional info */}
-        <div className="mt-12 md:mt-16 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Day & Night Events Welcome</h3>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            Our venue transforms beautifully from sunlit daytime celebrations to enchanting evening events. 
-            With professional lighting systems and ambient arrangements, your event shines at any hour.
-          </p>
-        </div>
-      </Section>
+     
 
       {/* ========== LARGE PARKING FACILITY SECTION ========== */}
       <Section className="bg-gray-50">
@@ -842,24 +839,8 @@ const Events = () => {
         </div>
       </Section>
 
-      {/* ========== EVENT GALLERY SECTION ========== */}
-      <Section className="bg-white">
-        <SectionHeading 
-          title="Event Gallery"
-          subtitle="Glimpses of celebrations and cherished moments created at Mango Tree Resort."
-        />
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {galleryItems.map((item) => (
-            <GalleryItem 
-              key={item.id}
-              title={item.title}
-              category={item.category}
-              url={item.url}
-            />
-          ))}
-        </div>
-      </Section>
+      
+     
 
       {/* ========== BOOKING PROCESS SECTION ========== */}
       <Section className="bg-gradient-to-br from-[#2E7D32]/5 to-[#C9A227]/5">

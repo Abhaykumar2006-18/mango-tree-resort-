@@ -78,7 +78,7 @@ ${form.message}`;
           className="bg-white rounded-[30px] shadow-xl p-6 md:p-8 border border-[#E5E0D8]"
         >
           <h2 className="text-3xl font-serif font-bold text-[#1B1B1B] mb-6">
-            Booking Enquiry
+            Contact Us
           </h2>
 
           <input

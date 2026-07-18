@@ -1,6 +1,7 @@
 import React from "react";
 import { Star, Users, Maximize, BedDouble, Snowflake, Sparkles, ArrowUpRight } from "lucide-react";
-
+import img4 from '../assets/img4.jpeg'
+import img5 from '../assets/img5.jpeg'
 /**
  * Rooms & Suites — resort booking section
  * Palette: ivory / warm sand / deep emerald / brushed gold
@@ -20,7 +21,7 @@ const rooms = [
     size: "48 m²",
     bed: "King Bed",
     image:
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=80",
+      `${img4}`,
     amenities: ["Full AC", "Private Balcony", "Rain Shower", "Mini Bar"],
   },
   {
@@ -35,7 +36,7 @@ const rooms = [
     size: "62 m²",
     bed: "King + Daybed",
     image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80",
+      `${img5}`,
     amenities: ["Full AC", "Private Pool", "Garden Terrace", "Butler Service"],
   },
   {
@@ -78,7 +79,7 @@ function RoomCard({ room }) {
         <img
           src={room.image}
           alt={room.name}
-          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          className="h-full w-full object-contain object-fill transition-transform duration-700 ease-out group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B3D32]/70 via-[#0B3D32]/0 to-transparent" />
 
