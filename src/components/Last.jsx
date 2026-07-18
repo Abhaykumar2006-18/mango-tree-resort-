@@ -28,8 +28,8 @@ const Last = () => {
            <Link to='/booking'> <button className="px-8 py-4 bg-[#C9A227] text-white font-semibold rounded-full shadow-lg transition-all duration-300 hover:bg-[#b38f1d] hover:shadow-2xl hover:-translate-y-1 active:scale-95"> Book Now </button></Link>
             
             
-            <button  className="px-8 py-4 bg-sky-600 text-white rounded-full font-semibold transition-all duration-300 hover:bg-sky-700 hover:shadow-xl hover:shadow-sky-500/30 hover:scale-105"> <a  href="tel:+911234567890">
-              📞 Call Now </a></button>
+          <a  href="tel:+911234567890">  <button  className=" px-8 py-4 bg-sky-600 text-white rounded-full font-semibold transition-all duration-300 hover:bg-sky-700 hover:shadow-xl hover:shadow-sky-500/30 hover:scale-105"> 
+              📞 Call Now </button></a>
           
           
           </div>
