@@ -76,12 +76,12 @@ const Footer = () => {
 
             <a href="tel:+918958366236" className={`flex items-center gap-3 ${linkStyle}`}>
               <FaPhoneAlt className="text-yellow-300" />
-              +91 8958366236
+              +91 9358248503
             </a>
 
             <a href="mailto:theukgaming425@gmail.com" className={`flex items-center gap-3 ${linkStyle}`}>
               <FaEnvelope className="text-yellow-300" />
-              theukgaming425@gmail.com
+              mangotreeresortandvilla@gmail.com
             </a>
           </div>
 

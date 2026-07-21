@@ -29,7 +29,7 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <a href="tel:+911234567890" className="px-8 py-4 rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold transition duration-300 text-center" >  📞 Call Now </a>
+            <a href="tel:+919358248503" className="px-8 py-4 rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold transition duration-300 text-center" >  📞 Call Now </a>
 
            <Link to="/rooms"> <button className="w-full px-8 py-4 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-black transition duration-300">
               Explore Rooms
@@ -40,12 +40,12 @@ const Hero = () => {
           {/* Stats */}
           <div className="mt-14 flex flex-wrap gap-8 text-white">
             <div>
-              <h2 className="text-3xl font-bold">15+</h2>
+              <h2 className="text-3xl font-bold">5+</h2>
               <p className="text-gray-300">Years Experience</p>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold">40+</h2>
+              <h2 className="text-3xl font-bold">15+</h2>
               <p className="text-gray-300">Luxury Rooms</p>
             </div>
 

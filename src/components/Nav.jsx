@@ -19,7 +19,7 @@ const Nav = () => {
         <div className="flex justify-between items-center h-20">
 
           {/* Logo */}
-          <Link to="/" className="text-3xl font-bold tracking-wide text-black font-Grenze"> Mango Tree </Link>
+          <Link to="/" className="text-2xl md:text-3xl font-bold tracking-wide text-black font-Grenze"> Mango Tree Resorts</Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-10">
