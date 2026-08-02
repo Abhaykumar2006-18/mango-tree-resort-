@@ -2,6 +2,7 @@ import React from "react";
 import { Star, Users, Maximize, BedDouble, Snowflake, Sparkles, ArrowUpRight } from "lucide-react";
 import img4 from '../assets/img4.jpeg'
 import img5 from '../assets/img5.jpeg'
+
 /**
  * Rooms & Suites — resort booking section
  * Palette: ivory / warm sand / deep emerald / brushed gold
@@ -149,13 +150,15 @@ function RoomCard({ room }) {
         </div>
 
         {/* CTA */}
-        <button className="group/btn mt-6 w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#0B3D32] text-[#F6F1E7] py-3 text-sm font-medium tracking-wide transition-all duration-300 hover:bg-[#B8935A] hover:text-[#0B3D32]">
-          Book Now
+        <a href="tel:+919358248503" >
+           <button className="group/btn mt-6 w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#0B3D32] text-[#F6F1E7] py-3 text-sm font-medium tracking-wide transition-all duration-300 hover:bg-[#B8935A] hover:text-[#0B3D32]">
+             Book Now 
           <ArrowUpRight
             size={16}
             className="transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
           />
         </button>
+        </a>
       </div>
     </div>
   );
