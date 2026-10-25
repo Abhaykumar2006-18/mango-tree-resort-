@@ -21,9 +21,9 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const whatsappNumber = "918979916129"; // ✅ your number
+    const whatsappNumber = "918958366236"; // ✅ your number
 
-    const text = `New Booking Request - Tyagi Farms
+    const text = `New Booking Request - Mango Tree Resorts
 
 Name: ${form.name}
 Phone: ${form.phone}
